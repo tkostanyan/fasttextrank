@@ -4,7 +4,7 @@ from collections import defaultdict
 import logging
 
 
-class Candidate(object):
+class Candidate:
     """
     data model for keyword/phrase candidates
     """

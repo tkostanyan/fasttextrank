@@ -7,14 +7,13 @@ class TextProcessor(object):
     class for NLP processor
     """
     @staticmethod
-    def process(text, max_length=None):
+    def process(text):
         """
         given a text, call spacy for sentence splitting, lemmatisation, and POS tagging
         :param text:
-        :param max_length:
         :return: a document with processed sentences
         """
-        nlp = spacy.load('en', max_length=max_length)
+        nlp = spacy.load('en_core_web_sm')
         doc = nlp(text)
 
         sentences = []

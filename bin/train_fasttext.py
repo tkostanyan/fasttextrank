@@ -17,7 +17,7 @@ def main():
 
     args = parser.parse_args()
 
-    model = FastText(size=args.embedding_size, sg=1)
+    model = FastText(vector_size=args.embedding_size, sg=1)
     model.build_vocab(corpus_file=args.input_file)
 
     total_words = model.corpus_total_words

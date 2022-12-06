@@ -46,7 +46,7 @@ class FastTextRank(BaseRank):
         """
 
         # calling spacy to process a text.
-        doc = TextProcessor.process(text=text, max_length=10**5)
+        doc = TextProcessor.process(text=text)
 
         self.sentences = doc.sentences
 
